@@ -1,0 +1,360 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+
+* {
+  user-select: none;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+
+html{
+    scroll-behavior: smooth;
+  }
+
+  a{
+    text-decoration: none;
+  }
+
+  body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    word-wrap: break-word;
+  }
+
+  header {
+    background-image: url(obrazky_index/hp-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hp-logo{
+    width: 100%;
+  }
+
+  @media (min-width: 1024px) {
+    .hp-logo{
+      width: 50%;
+    }
+  }
+
+  .arrow {
+    position: absolute;
+    bottom: 50px; /* Adjust position of arrow vertically */
+    left: 50%; /* Position arrow horizontally centered */
+    transform: translateX(-50%); /* Adjust position of arrow horizontally centered */
+    width: 20px;
+    height: 20px;
+    justify-content: center;
+    opacity: 75%;
+  }
+  
+  .arrow span {
+    position: absolute;
+    width: 7px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: rgb(0, 0, 0);
+    animation: move 2s infinite ease-in-out;
+  }
+  
+  .arrow span:nth-child(1) {
+    transform: rotate(-50deg);
+    top: 0;
+    right: 20px;
+  }
+  
+  .arrow span:nth-child(2) {
+    transform: rotate(50deg);
+    top: 0;
+    left: 20px;
+  }
+  
+  @keyframes move {
+    0% { top: -40px; }
+    50% { top: -20px; }
+    100% { top: -40px; }
+  }
+  
+  .arrow:hover{
+    opacity: 100%;
+    transition: 0.3s;
+  }
+
+  .first{
+    height: 100%;
+  }
+
+.karticka{
+  opacity: 75%;
+  width: 90%;
+}
+
+.karticka-2{
+  opacity: 75%;
+  width: 90%;
+}
+
+.karticka:hover{
+  transition: 0.3s;
+  opacity: 100%;
+}
+
+.first-text{
+  text-align: center;
+}
+
+.nadpis-1{
+  font-size: 20px;
+  font-weight: 700;
+}
+
+
+i.bi.bi-code-slash{
+  color: white;
+  font-size: 2.5em;
+  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+  font-size: 80px;
+
+}
+
+.typewrite{
+  font-size: 35px;
+  font-weight: 400;
+  text-align: center;
+  padding-top: 1.25rem;
+  color: white;
+}
+
+.sekce-1-konec{
+  font-size: 30px;
+  text-align: center;
+  background-color: rgb(225, 225, 225);
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  margin-bottom: 7.5rem;
+  margin-top: 2rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.tlacitko-1{
+  outline: solid black 1px;
+  padding: 40px;
+}
+
+.tlacitko-2{
+  outline: solid black 1px;
+  padding: 40px;
+}
+
+.prvni-ikona{
+  text-align: center;
+}
+
+.button-81 {
+  background-color: #fff;
+  border: 0 solid #e2e8f0;
+  border-radius: 1.5rem;
+  box-sizing: border-box;
+  color: #363439;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Basier circle",-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: 1.1rem;
+  font-weight: 600;
+  line-height: 1;
+  padding: 1rem 1.6rem;
+  text-align: center;
+  text-decoration: none #363439 solid;
+  text-decoration-thickness: auto;
+  transition: all .1s cubic-bezier(.4, 0, .2, 1);
+  box-shadow: 0px 1px 2px rgba(166, 175, 195, 0.25);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  outline: 2px solid #363439;
+}
+
+.button-81:hover {
+  background-color: #363439;
+  color: #fff;
+  outline: none;
+}
+
+@media (min-width: 768px) {
+  .button-81 {
+    font-size: 1.125rem;
+    padding: 1rem 2rem;
+  }
+}
+
+.center-img {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.contacts{
+  background-color: #438998;
+}
+
+.credit{
+  color: white;
+  font-weight: 500;
+  font-size: 35px;
+  text-decoration: none;
+}
+
+.contacts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 12vh; /* Set height to 100% of the viewport height */
+}
+
+
+footer {
+  position: static; /* nebo static */
+  background-color: #363439;
+}
+
+main {
+  margin-bottom: 50px; /* Zajistí, že footer bude odstupovat od obsahu */
+}
+
+@media (max-width: 767px) {
+  .credit {
+    font-size: 20px;
+  }
+  .contacts{
+    height: 10vh;
+  }
+}
+
+@media (max-width: 450px) {
+  .credit {
+    font-size: 15px;
+  }
+  .contacts{
+    height: 7.5vh;
+  }
+  .sekce-1-konec{
+    margin-bottom: 5.5rem;
+  }
+}
+
+@media (max-width: 350px) {
+  .credit {
+    font-size: 10px;
+  }
+  .contacts{
+    height: 5vh;
+  }
+
+}
+
+@media (max-width: 446px) {
+  .pripad{
+    margin-bottom: 20px;
+    width: 200px;
+  }
+  .pripad-dodatek{
+    width: 200px;
+  }
+}
+
+:root {
+  --glow-hue: 222deg;
+  --shadow-hue: 180deg;
+  --spring-easing: linear(
+  0, 0.002, 0.01 0.9%, 0.038 1.8%, 0.156, 0.312 5.8%, 0.789 11.1%, 1.015 14.2%,
+  1.096, 1.157, 1.199, 1.224 20.3%, 1.231, 1.231, 1.226, 1.214 24.6%,
+  1.176 26.9%, 1.057 32.6%, 1.007 35.5%, 0.984, 0.968, 0.956, 0.949 42%,
+  0.946 44.1%, 0.95 46.5%, 0.998 57.2%, 1.007, 1.011 63.3%, 1.012 68.3%,
+  0.998 84%, 1
+);
+  --spring-duration: 1.33s;
+}
+@property --shimmer {
+  syntax: "<angle>";
+  inherits: false;
+  initial-value: 33deg;
+}
+
+@keyframes shimmer {
+  0% {
+      --shimmer: 0deg;
+  }
+  100% {
+      --shimmer: 360deg;
+  }
+}
+
+@keyframes shine {
+  0% {
+      opacity: 0;
+  }
+  15% {
+      opacity: 1;
+  }
+  55% {
+      opacity: 1;
+  }
+  100% {
+      opacity: 0;
+  }
+}
+@keyframes text {
+  0% {
+      background-position: 100% center;
+  }    
+  100% {
+      background-position: -100% center;
+  }    
+}
+
+button {
+  font-size: 18px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  display: inline-block;
+  text-align: center;
+  font-weight: bold;
+  padding: 0.7em 2em;
+  border: 3px solid #438899;
+  border-radius: 2px;
+  position: absolute;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
+  color: #373438;
+  text-decoration: none;
+  transition: 0.3s ease all;
+  z-index: 1;
+  top: 5%;
+  font-family: "Basier circle",-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+
+button:before {
+  transition: 0.5s all ease;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  opacity: 0;
+  content: '';
+  background-color: #438899;
+  z-index: -1;
+}
+
+button:hover, button:focus {
+  color: white;
+}
+
+button:hover:before, button:focus:before {
+  transition: 0.5s all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
+

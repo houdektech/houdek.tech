@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Jan Houdek - tvůrce obsahu</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="index.css">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="obrazky_index/favicon.png"/>
+</head>
+
+<body>
+  
+  <header>
+      <button data-aos="fade-up" data-bs-toggle="tooltip" title="zasílám na e-mailu"> Životopis
+      </button>
+
+    <img data-aos="zoom-in" class="hp-logo" src="obrazky_index/hp-bg-logo.png" alt="">
+    <a href="#one" class="arrow">
+      <span></span>
+      <span></span>
+  </a>
+  </header>
+
+  <main>
+    <section id="one" class="first pt-special">
+      <div class="prvni pt-5 pb-5 text-center" style="overflow-x: hidden;">
+        <div class="row">
+          <div class="col-md-6">
+            <img data-aos="fade-right" class="karticka img-fluid" src="obrazky_index/karta.png" alt="">
+          </div>
+          <div class="col-md-6">
+            <img data-aos="fade-left" class="karticka-2 img-fluid" src="obrazky_index/přednosti.png" alt="">
+          </div>
+        </div>
+      </div>
+
+        <div data-aos="fade" class="sekce-1-konec container-fluid">
+          <div style="display: flex; justify-content: center; align-items: center;">
+            <img class="img-fluid col-lg-12 row container center-img" style="display: block; margin: 0 auto;" src="obrazky_index/projekty.png" alt="">
+        </div>
+      <a href="https://www.houdek.tech/projekt_ai" class="button-81 pripad">Umělá inteligence [2024]</a>
+      <a href="https://www.houdek.tech/projekt_python" class="button-81 pripad-dodatek">Python [2023]</a>
+
+    </section>
+  </main>
+  <footer>
+    <div class="contacts">
+        <p class="typewrite credit" data-period="1000" data-type='[ "© Jan Houdek 2024 - Všechna práva vyhrazena.", "Pro jakoukoliv pomoc či službu mě kontaktujte."]'>
+          <span class="wrap"></span>
+        </p>
+    </div>
+  </footer>
+  <!-- Bootstrap JavaScript Libraries -->
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  
+  <script>
+    AOS.init({
+    // Global settings:
+    disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+    startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+    initClassName: 'aos-init', // class applied after initialization
+    animatedClassName: 'aos-animate', // class applied on animation
+    useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+    disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+    debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+    throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+    
+  
+    // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+    offset: 120, // offset (in px) from the original trigger point
+    delay: 0, // values from 0 to 3000, with step 50ms
+    duration: 1000, // values from 0 to 3000, with step 50ms
+    easing: 'ease', // default easing for AOS animations
+    once: false, // whether animation should happen only once - while scrolling down
+    mirror: false, // whether elements should animate out while scrolling past them
+    anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+  });
+  </script>
+
+
+  <script src="index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+  <script>
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+      return new bootstrap.Tooltip(tooltipTriggerEl)
+    })
+    </script>
+</body>
+</html>
